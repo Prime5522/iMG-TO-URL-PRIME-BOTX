@@ -26,16 +26,17 @@ START_TEXT = """**{},
 
 ɪ ᴄᴀɴ ᴄᴏɴᴠᴇʀᴛ ᴀɴʏ ᴍᴇᴅɪᴀ (ᴘʜᴏᴛᴏ/ᴠɪᴅᴇᴏ) ᴜɴᴅᴇʀ 𝟷𝟶ᴍʙ.
 
-ᴍʏ ᴄʀᴇᴀᴛᴏʀ : <a href='https://telegram.me/CodeXBro'>ʀᴀʜᴜʟ</a>**"""
+🌿 ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ  <a href='https://t.me/Prime_Botz'>𝐏𝐑𝐈𝐌𝐄 𝐁𝐎𝐓𝐳 🔥</a>**"""
 
 ABOUT_TEXT = """**{},
 
 🤖 ɪ ᴀᴍ [ᴍᴇᴅɪᴀ ᴛᴏ ᴜʀʟ ʙᴏᴛ](https://telegram.me/MediaToUrlBot)
+👨‍💻 ᴍʏ ᴄʀᴇᴀᴛᴏʀ : <a href="https://telegram.me/Prime_Admin_Nayem">ᴍʀ.ᴘʀɪᴍᴇ</a>
+🌿 ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : <a href="https://t.me/Prime_Botz">ᴘʀɪᴍᴇ ʙᴏᴛz</a>
 ⚙️ ᴄʜɪʟʟɪɴɢ ᴏɴ : <a href="https://www.heroku.com/">ʜᴇʀᴏᴋᴜ</a>
 🍿 ʙʀᴀɪɴ ꜰᴜᴇʟᴇᴅ : <a href="https://www.mongodb.com/">ᴍᴏɴɢᴏ ᴅʙ</a>
 😚 ᴄᴏᴅɪɴɢ ᴍᴜsᴄʟᴇs : <a href="https://www.python.org/">ᴘʏᴛʜᴏɴ 3</a>
-👨‍💻 ᴍʏ ᴄʀᴇᴀᴛᴏʀ : <a href="https://telegram.me/CodeXBro">ʀᴀʜᴜʟ</a>
-😜 ʀᴇᴘᴏ : <a href="https://github.com/CodeXBots">ʟɪɴᴋ</a>**"""
+😜 sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ : <a href="https://t.me/Prime_Bots_Support_RoBot">Cᴏɴɴᴇᴄᴛ Oᴡɴᴇʀ</a>**"""
 
 DONATE_TXT = """<blockquote>❤️‍🔥 𝐓𝐡𝐚𝐧𝐤𝐬 𝐟𝐨𝐫 𝐬𝐡𝐨𝐰𝐢𝐧𝐠 𝐢𝐧𝐭𝐞𝐫𝐞𝐬𝐭 𝐢𝐧 𝐃𝐨𝐧𝐚𝐭𝐢𝐨𝐧</blockquote>
 
