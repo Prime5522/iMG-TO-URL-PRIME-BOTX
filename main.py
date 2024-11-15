@@ -30,7 +30,7 @@ START_TEXT = """**{},
 
 ABOUT_TEXT = """**{},
 
-🤖 ɪ ᴀᴍ [ᴍᴇᴅɪᴀ ᴛᴏ ᴜʀʟ ʙᴏᴛ](https://t.me/Media_To_URL_Prime_Bot)
+🤖 ɪ ᴀᴍ [ᴍᴇᴅɪᴀ ᴛᴏ ᴜʀʟ ʙᴏᴛ](https://t.me/iMg_2_Url_Prime_Bot)
 👨‍💻 ᴍʏ ᴄʀᴇᴀᴛᴏʀ : <a href="https://telegram.me/Prime_Admin_Nayem">ᴍʀ.ᴘʀɪᴍᴇ</a>
 🌿 ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : <a href="https://t.me/Prime_Botz">ᴘʀɪᴍᴇ ʙᴏᴛz</a>
 ⚙️ ᴄʜɪʟʟɪɴɢ ᴏɴ : <a href="https://www.heroku.com/">ʜᴇʀᴏᴋᴜ</a>
