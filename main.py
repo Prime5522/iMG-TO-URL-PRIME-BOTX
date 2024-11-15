@@ -26,11 +26,11 @@ START_TEXT = """**{},
 
 ɪ ᴄᴀɴ ᴄᴏɴᴠᴇʀᴛ ᴀɴʏ ᴍᴇᴅɪᴀ (ᴘʜᴏᴛᴏ/ᴠɪᴅᴇᴏ) ᴜɴᴅᴇʀ 𝟷𝟶ᴍʙ.
 
-🌿 ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ  <a href='https://t.me/Prime_Botz'>𝐏𝐑𝐈𝐌𝐄 𝐁𝐎𝐓𝐳 🔥</a>**"""
+🌿<blockquote> ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ  <a href='https://t.me/Prime_Botz'>𝐏𝐑𝐈𝐌𝐄 𝐁𝐎𝐓𝐳 🔥</a>**</blockquote>"""
 
 ABOUT_TEXT = """**{},
 
-🤖 ɪ ᴀᴍ [ᴍᴇᴅɪᴀ ᴛᴏ ᴜʀʟ ʙᴏᴛ](https://telegram.me/MediaToUrlBot)
+🤖 ɪ ᴀᴍ [ᴍᴇᴅɪᴀ ᴛᴏ ᴜʀʟ ʙᴏᴛ](https://t.me/Media_To_URL_Prime_Bot)
 👨‍💻 ᴍʏ ᴄʀᴇᴀᴛᴏʀ : <a href="https://telegram.me/Prime_Admin_Nayem">ᴍʀ.ᴘʀɪᴍᴇ</a>
 🌿 ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : <a href="https://t.me/Prime_Botz">ᴘʀɪᴍᴇ ʙᴏᴛz</a>
 ⚙️ ᴄʜɪʟʟɪɴɢ ᴏɴ : <a href="https://www.heroku.com/">ʜᴇʀᴏᴋᴜ</a>
@@ -54,17 +54,17 @@ FORCE_SUBSCRIBE_TEXT = """
 
 START_BUTTONS = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton('ᴅᴇᴠᴇʟᴏᴘᴇʀ', url='https://youtube.com/@RahulReviews')
+        InlineKeyboardButton('ᴅᴇᴠᴇʟᴏᴘᴇʀ', url='https://telegram.me/Prime_Admin_Nayem')
 	],[
         InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about'),
-        InlineKeyboardButton('ꜱᴜᴘᴘᴏʀᴛ', url='https://telegram.me/CodeXSupport')
+        InlineKeyboardButton('ꜱᴜᴘᴘᴏʀᴛ', url='https://t.me/Prime_Bots_Support_RoBot')
         ]]
     )
 
 ABOUT_BUTTONS = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton('🫡 ᴅᴏɴᴀᴛᴇ', url='https://codexbots.github.io/Donate'),
-        InlineKeyboardButton('👨‍💻 ᴏᴡɴᴇʀ', url='https://telegram.me/CodexBro')
+        InlineKeyboardButton('⍟ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ⍟', url='https://codexbots.github.io/Donate'),
+        InlineKeyboardButton('👨‍💻 ᴏᴡɴᴇʀ 👨‍💻', url='https://telegram.me/Prime_Admin_Nayem')
 	],[
         InlineKeyboardButton('⋞ ʙᴀᴄᴋ', callback_data='home')
         ]]
