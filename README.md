@@ -1,5 +1,5 @@
 <h1 align="center">
- <b><a href="https://youtu.be/FEtTOCOOUq8" target="/blank">Media To Link</a>
+ <b><a href="https:// t.me/MediaToUrlBot" target="/blank">Media To Link</a>
 </h1>
 
 <p align="center">🩷 Thanks for Being Here 🩷</p>
@@ -59,7 +59,7 @@ broadcast - To broadcast your message
 <h3 align="center">
     ─「 ᴅᴇᴩʟᴏʏ ᴏɴ ᴋᴏʏᴇʙ 」─
 </h3>
-<p align="center"><a href="https://app.koyeb.com/deploy?type=git&repository=github.com/CodeXBots/Media-To-Link&branch=main&name=Media-To-Link">
+<p align="center"><a href="https://app.koyeb.com/deploy?type=git&repository=github.com/PrimeBotz/Prime-Media-To-Link&branch=PRIME-BOTz&name=Media-To-Link">
   <img src="https://www.koyeb.com/static/images/deploy/button.svg" alt="Deploy On Koyeb">
 </a></p>
 <h3 align="center">
