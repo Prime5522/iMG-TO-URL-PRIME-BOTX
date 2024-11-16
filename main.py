@@ -155,16 +155,17 @@ async def upload(client, message):
                 await message.reply_text(text="You are banned!")
                 return
         except UserNotParticipant:
-            await message.reply_text(
-                text=FORCE_SUBSCRIBE_TEXT,
+            await message.reply_photo(
+                photo="https://envs.sh/Lwa.jpg",  # ছবির লিংক
+                caption="Iғ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴜꜱᴇ ᴍᴇ ғɪʀꜱᴛ ʏᴏᴜ ɴᴇᴇᴅ ᴛᴏ Jᴏɪɴ ᴏᴜʀ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ.\n\nғɪʀꜱᴛ, ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ '✇ Jᴏɪɴ Oᴜʀ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✇' ʙᴜᴛᴛᴏɴ, ᴛʜᴇɴ, ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ 'ʀᴇᴏᴜᴇꜱᴛ ᴛᴏ Jᴏɪɴ' ʙᴜᴛᴛᴏɴ.\n\nᴀғᴛᴇʀ ᴛʜᴀᴛ ᴄᴏᴍᴇ ʜᴇʀᴇ ᴀɢᴀɪɴ ᴀɴᴅ ꜱᴇɴᴅ ʏᴏᴜʀ ғɪʟᴇ.",
                 reply_markup=InlineKeyboardMarkup(
-                    [[InlineKeyboardButton(text="⛔️ ᴊᴏɪɴ ɴᴏᴡ ⛔️", url=f"https://telegram.me/{UPDATE_CHANNEL}")]]
+                    [[InlineKeyboardButton(text="✇ Jᴏɪɴ Oᴜʀ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✇", url=f"https://telegram.me/{UPDATE_CHANNEL}")]]
                 )
             )
             return
         except Exception as error:
             print(error)
-            await message.reply_text(text="<b>ꜱᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ ᴡʀᴏɴɢ ᴄᴏɴᴛᴀᴄᴛ ᴍʏ <a href='https://telegram.me/CodeXBro'>ᴄʀᴇᴀᴛᴏʀ</a>.</b>", disable_web_page_preview=True)
+            await message.reply_text(text="<b>ꜱᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ ᴡʀᴏɴɢ...</b>", disable_web_page_preview=True)
             return
 
     file_size_limit = 10 * 1024 * 1024  # 10 MB in bytes
