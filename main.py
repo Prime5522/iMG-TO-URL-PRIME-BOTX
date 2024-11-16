@@ -24,7 +24,7 @@ START_TEXT = """**{},
 
 ɪ ᴀᴍ ᴍᴇᴅɪᴀ ᴛᴏ ᴜʀʟ ᴜᴘʟᴏᴀᴅᴇʀ ʙᴏᴛ. 
 
-ɪ ᴄᴀɴ ᴄᴏɴᴠᴇʀᴛ ᴀɴʏ ᴍᴇᴅɪᴀ (ᴘʜᴏᴛᴏ/ᴠɪᴅᴇᴏ) ᴜɴᴅᴇʀ 𝟷𝟶ᴍʙ.
+ɪ ᴄᴀɴ ᴄᴏɴᴠᴇʀᴛ ᴀɴʏ ᴍᴇᴅɪᴀ (ᴘʜᴏᴛᴏ/ᴠɪᴅᴇᴏ) ᴜɴᴅᴇʀ 5𝟶ᴍʙ.
 
 🌿<blockquote> ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ  <a href='https://t.me/Prime_Botz'>𝐏𝐑𝐈𝐌𝐄 𝐁𝐎𝐓𝐳 🔥</a>**</blockquote>"""
 
@@ -169,30 +169,31 @@ async def upload(client, message):
             await message.reply_text(text="<b>ꜱᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ ᴡʀᴏɴɢ...</b>", disable_web_page_preview=True)
             return
 
-    file_size_limit = 10 * 1024 * 1024  # 10 MB in bytes
-    if message.document and message.document.file_size > file_size_limit:
-        await message.reply_text("<b>⚠️ ꜱᴇɴᴅ ᴀ ᴍᴇᴅɪᴀ ᴜɴᴅᴇʀ 𝟷𝟶 ᴍʙ</b>")
-        return
-    elif message.photo and message.photo.file_size > file_size_limit:
-        await message.reply_text("<b>⚠️ ꜱᴇɴᴅ ᴀ ᴍᴇᴅɪᴀ ᴜɴᴅᴇʀ 𝟷𝟶 ᴍʙ</b>")
-        return
+    file_size_limit = 50 * 1024 * 1024  # 50 MB in bytes
 
-    path = await message.download()
+if message.document and message.document.file_size > file_size_limit:
+    await message.reply_text("<b>⚠️ ꜱᴇɴᴅ ᴀ ᴍᴇᴅɪᴀ ᴜɴᴅᴇʀ 50 ᴍʙ</b>")
+    return
+elif message.photo and message.photo.file_size > file_size_limit:
+    await message.reply_text("<b>⚠️ ꜱᴇɴᴅ ᴀ ᴍᴇᴅɪᴀ ᴜɴᴅᴇʀ 50 ᴍʙ</b>")
+    return
 
-    uploading_message = await message.reply_text("<code>ᴜᴘʟᴏᴀᴅɪɴɢ...</code>")
+path = await message.download()
 
-    try:
-        image_url = upload_image_requests(path)
-        if not image_url:
-            raise Exception("Failed to upload file.")
-    except Exception as error:
-        await uploading_message.edit_text(f"Upload failed: {error}")
-        return
+uploading_message = await message.reply_text("<code>ᴜᴘʟᴏᴀᴅɪɴɢ...</code>")
 
-    try:
-        os.remove(path)
-    except Exception as error:
-        print(f"Error removing file: {error}")
+try:
+    image_url = upload_image_requests(path)
+    if not image_url:
+        raise Exception("Failed to upload file.")
+except Exception as error:
+    await uploading_message.edit_text(f"Upload failed: {error}")
+    return
+
+try:
+    os.remove(path)
+except Exception as error:
+    print(f"Error removing file: {error}")
         
     await uploading_message.delete()
     codexbots=await message.reply_photo(
