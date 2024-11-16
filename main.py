@@ -24,9 +24,11 @@ START_TEXT = """**{},
 
 ɪ ᴀᴍ ᴍᴇᴅɪᴀ ᴛᴏ ᴜʀʟ ᴜᴘʟᴏᴀᴅᴇʀ ʙᴏᴛ. 
 
-ɪ ᴄᴀɴ ᴄᴏɴᴠᴇʀᴛ ᴀɴʏ ᴍᴇᴅɪᴀ (ᴘʜᴏᴛᴏ/ᴠɪᴅᴇᴏ) ᴜɴᴅᴇʀ 5𝟶ᴍʙ.
+ɪ ᴄᴀɴ ᴄᴏɴᴠᴇʀᴛ ᴀɴʏ ᴍᴇᴅɪᴀ (ᴘʜᴏᴛᴏ/ᴠɪᴅᴇᴏ) ᴜɴᴅᴇʀ 50ᴍʙ.
 
-🌿<blockquote> ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ  <a href='https://t.me/Prime_Botz'>𝐏𝐑𝐈𝐌𝐄 𝐁𝐎𝐓𝐳 🔥</a>**</blockquote>"""
+Dᴏɴ'ᴛ wᴏʀʀʏ Iғ ʏᴏᴜ wᴀɴᴛ ᴛᴏ lɪɴᴋ fɪʟᴇs fʀᴏᴍ 50 MB ᴛᴏ 5 GB ᴛʜᴇɴ ʏᴏᴜ cᴀɴ ᴜsᴇ ➠ <a href='https://t.me/File_To_Link_Prime_Bot'>Fɪʟᴇ Tᴏ Lɪɴᴋ Pʀɪᴍᴇ Bᴏᴛ 🔗</a>
+
+<blockquote> 🌿 ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ  <a href='https://t.me/Prime_Botz'>𝐏𝐑𝐈𝐌𝐄 𝐁𝐎𝐓𝐳 🔥</a>**</blockquote>"""
 
 ABOUT_TEXT = """**{},
 
