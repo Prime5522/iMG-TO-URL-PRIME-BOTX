@@ -107,7 +107,6 @@ async def cb_handler(bot, update):
 
 @Bot.on_message(filters.private & filters.command(["start"]))
 async def start(bot, update):
-    await message.react(emoji="🔥", big=True)
     if not await db.is_user_exist(update.from_user.id):
         await db.add_user(update.from_user.id)
 
