@@ -114,7 +114,7 @@ async def start(bot, update):
 
     # স্টার্ট মেসেজে টেক্সট, বাটন, এবং পিকচার পাঠানো
     await update.reply_photo(
-        photo="https://envs.sh/LM4.jpg",  # পিকচারের লিঙ্ক দিন
+        photo="https://envs.sh/LxR.jpg",  # পিকচারের লিঙ্ক দিন
         caption=START_TEXT.format(update.from_user.mention),  # মেসেজ টেক্সট
         reply_markup=START_BUTTONS  # বাটন
     )
