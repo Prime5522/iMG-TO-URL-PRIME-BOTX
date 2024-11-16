@@ -24,9 +24,9 @@ START_TEXT = """**{},
 
 ɪ ᴀᴍ ᴍᴇᴅɪᴀ ᴛᴏ ᴜʀʟ ᴜᴘʟᴏᴀᴅᴇʀ ʙᴏᴛ. 
 
-ɪ ᴄᴀɴ ᴄᴏɴᴠᴇʀᴛ ᴀɴʏ ᴍᴇᴅɪᴀ (ᴘʜᴏᴛᴏ/ᴠɪᴅᴇᴏ) ᴜɴᴅᴇʀ 50ᴍʙ.
+ɪ ᴄᴀɴ ᴄᴏɴᴠᴇʀᴛ ᴀɴʏ ᴍᴇᴅɪᴀ (ᴘʜᴏᴛᴏ/ᴠɪᴅᴇᴏ) ᴜɴᴅᴇʀ 15ᴍʙ.
 
-Dᴏɴ'ᴛ wᴏʀʀʏ Iғ ʏᴏᴜ wᴀɴᴛ ᴛᴏ lɪɴᴋ fɪʟᴇs fʀᴏᴍ 50 MB ᴛᴏ 5 GB ᴛʜᴇɴ ʏᴏᴜ cᴀɴ ᴜsᴇ ➠ <a href='https://t.me/File_To_Link_Prime_Bot'>Fɪʟᴇ Tᴏ Lɪɴᴋ Pʀɪᴍᴇ Bᴏᴛ 🔗</a>
+Dᴏɴ'ᴛ wᴏʀʀʏ Iғ ʏᴏᴜ wᴀɴᴛ ᴛᴏ lɪɴᴋ fɪʟᴇs fʀᴏᴍ 16 MB ᴛᴏ 5 GB ᴛʜᴇɴ ʏᴏᴜ cᴀɴ ᴜsᴇ ➠ <a href='https://t.me/File_To_Link_Prime_Bot'>Fɪʟᴇ Tᴏ Lɪɴᴋ Pʀɪᴍᴇ Bᴏᴛ 🔗</a>
 
 <blockquote> 🌿 ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ  <a href='https://t.me/Prime_Botz'>𝐏𝐑𝐈𝐌𝐄 𝐁𝐎𝐓𝐳 🔥</a>**</blockquote>"""
 
@@ -171,12 +171,12 @@ async def upload(client, message):
             await message.reply_text(text="<b>ꜱᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ ᴡʀᴏɴɢ...</b>", disable_web_page_preview=True)
             return
 
-    file_size_limit = 50 * 1024 * 1024  # 50 MB in bytes 
+    file_size_limit = 15 * 1024 * 1024  # 50 MB in bytes 
     if message.document and message.document.file_size > file_size_limit:
-        await message.reply_text("<b>⚠️ ꜱᴇɴᴅ ᴀ ᴍᴇᴅɪᴀ ᴜɴᴅᴇʀ 50 ᴍʙ</b>")
+        await message.reply_text("<b>⚠️ ꜱᴇɴᴅ ᴀ ᴍᴇᴅɪᴀ ᴜɴᴅᴇʀ 15 ᴍʙ</b>")
         return
     elif message.photo and message.photo.file_size > file_size_limit:
-        await message.reply_text("<b>⚠️ ꜱᴇɴᴅ ᴀ ᴍᴇᴅɪᴀ ᴜɴᴅᴇʀ 50 ᴍʙ</b>")
+        await message.reply_text("<b>⚠️ ꜱᴇɴᴅ ᴀ ᴍᴇᴅɪᴀ ᴜɴᴅᴇʀ 15 ᴍʙ</b>")
         return
 
     path = await message.download()
