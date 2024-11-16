@@ -171,32 +171,31 @@ async def upload(client, message):
             await message.reply_text(text="<b>ꜱᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ ᴡʀᴏɴɢ...</b>", disable_web_page_preview=True)
             return
 
-    file_size_limit = 50 * 1024 * 1024  # 50 MB in bytes
+    file_size_limit = 50 * 1024 * 1024  # 50 MB in bytes 
+    if message.document and message.document.file_size > file_size_limit:
+        await message.reply_text("<b>⚠️ ꜱᴇɴᴅ ᴀ ᴍᴇᴅɪᴀ ᴜɴᴅᴇʀ 50 ᴍʙ</b>")
+        return
+    elif message.photo and message.photo.file_size > file_size_limit:
+        await message.reply_text("<b>⚠️ ꜱᴇɴᴅ ᴀ ᴍᴇᴅɪᴀ ᴜɴᴅᴇʀ 50 ᴍʙ</b>")
+        return
 
-if message.document and message.document.file_size > file_size_limit:
-    await message.reply_text("<b>⚠️ ꜱᴇɴᴅ ᴀ ᴍᴇᴅɪᴀ ᴜɴᴅᴇʀ 50 ᴍʙ</b>")
-    return
-elif message.photo and message.photo.file_size > file_size_limit:
-    await message.reply_text("<b>⚠️ ꜱᴇɴᴅ ᴀ ᴍᴇᴅɪᴀ ᴜɴᴅᴇʀ 50 ᴍʙ</b>")
-    return
+    path = await message.download()
 
-path = await message.download()
+    uploading_message = await message.reply_text("<code>ᴜᴘʟᴏᴀᴅɪɴɢ...</code>")
 
-uploading_message = await message.reply_text("<code>ᴜᴘʟᴏᴀᴅɪɴɢ...</code>")
+    try:
+        image_url = upload_image_requests(path)
+        if not image_url:
+            raise Exception("Failed to upload file.")
+    except Exception as error:
+        await uploading_message.edit_text(f"Upload failed: {error}")
+        return
 
-try:
-    image_url = upload_image_requests(path)
-    if not image_url:
-        raise Exception("Failed to upload file.")
-except Exception as error:
-    await uploading_message.edit_text(f"Upload failed: {error}")
-    return
-
-try:
-    os.remove(path)
-except Exception as error:
-    print(f"Error removing file: {error}")
-        
+    try:
+        os.remove(path)
+    except Exception as error:
+        print(f"Error removing file: {error}")
+	    
     await uploading_message.delete()
     codexbots=await message.reply_photo(
         photo=f'{image_url}',
