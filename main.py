@@ -53,14 +53,13 @@ FORCE_SUBSCRIBE_TEXT = """
 ᴄʟɪᴄᴋ ᴊᴏɪɴ ɴᴏᴡ ʙᴜᴛᴛᴏɴ 👇</b></i>"""
 
 START_BUTTONS = InlineKeyboardMarkup(
-        [[
-        InlineKeyboardButton('ᴅᴇᴠᴇʟᴏᴘᴇʀ', url='https://telegram.me/Prime_Admin_Nayem')
-	],[
-        InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about'),
-        InlineKeyboardButton('ꜱᴜᴘᴘᴏʀᴛ', url='https://t.me/Prime_Bots_Support_RoBot')
-        ]]
-    )
-
+    [[
+        InlineKeyboardButton('🚀‌ ꜱᴜᴘᴘᴏʀᴛ 🚀‌', url='https://t.me/Prime_Bots_Support_RoBot'),
+        InlineKeyboardButton('🦋‌ ᴀʙᴏᴜᴛ 🦋', callback_data='about')
+    ],[
+        InlineKeyboardButton('⍟ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ⍟', url='https://telegram.me/Prime_Admin_Nayem')
+    ]]
+)
 ABOUT_BUTTONS = InlineKeyboardMarkup(
         [[
         InlineKeyboardButton('⍟ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ⍟', url='https://codexbots.github.io/Donate'),
