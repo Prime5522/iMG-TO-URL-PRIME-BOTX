@@ -57,12 +57,12 @@ START_BUTTONS = InlineKeyboardMarkup(
         InlineKeyboardButton('🚀‌ ꜱᴜᴘᴘᴏʀᴛ 🚀‌', url='https://t.me/Prime_Bots_Support_RoBot'),
         InlineKeyboardButton('🦋‌ ᴀʙᴏᴜᴛ 🦋', callback_data='about')
     ],[
-        InlineKeyboardButton('⍟ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ⍟', url='https://telegram.me/Prime_Admin_Nayem')
+        InlineKeyboardButton('⍟ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ⍟', url='https://t.me/Prime_Botz')
     ]]
 )
 ABOUT_BUTTONS = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton('⍟ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ⍟', url='https://codexbots.github.io/Donate'),
+        InlineKeyboardButton('⍟ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ⍟', url='https://t.me/Prime_Botz'),
         InlineKeyboardButton('👨‍💻 ᴏᴡɴᴇʀ 👨‍💻', url='https://telegram.me/Prime_Admin_Nayem')
 	],[
         InlineKeyboardButton('⋞ ʙᴀᴄᴋ', callback_data='home')
@@ -196,18 +196,16 @@ async def upload(client, message):
     await uploading_message.delete()
     codexbots=await message.reply_photo(
         photo=f'{image_url}',
-        caption=f"<b>ʏᴏᴜʀ ᴄʟᴏᴜᴅ ʟɪɴᴋ ᴄᴏᴍᴘʟᴇᴛᴇᴅ 👇</b>\n\n𝑳𝒊𝒏𝒌 :-\n\n<code>{image_url}</code> \n\n<b>ʙʏ - <a href='https://telegram.me/CodeXBro'>ʀᴀʜᴜʟ</a></b>",
+        caption=f"<b>ʏᴏᴜʀ ᴄʟᴏᴜᴅ ʟɪɴᴋ ᴄᴏᴍᴘʟᴇᴛᴇᴅ 👇</b>\n\n𝑳𝒊𝒏𝒌 :-\n\n<code>{image_url}</code> \n\n<b>ʙʏ - <a href='https://t.me/Prime_Botz'>⍟ Pʀɪᴍᴇ Bᴏᴛᴢ ⍟</a></b>",
         #disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup([[
-            InlineKeyboardButton(text="• ᴏᴘᴇɴ ʟɪɴᴋ •", url=image_url),
-            InlineKeyboardButton(text="• sʜᴀʀᴇ ʟɪɴᴋ •", url=f"https://telegram.me/share/url?url={image_url}")
+            InlineKeyboardButton(text="•🔗  ᴏᴘᴇɴ ʟɪɴᴋ 🔗•", url=image_url),
+            InlineKeyboardButton(text="•🖇️ sʜᴀʀᴇ ʟɪɴᴋ 🖇️•", url=f"https://telegram.me/share/url?url={image_url}")
         ], [
             InlineKeyboardButton(text="❌   ᴄʟᴏsᴇ   ❌", callback_data="close_data")
         ]])
    )
-    await asyncio.sleep(120)
-    await codexbots.delete()
-
+    
 @Bot.on_message(filters.private & filters.command("users") & filters.user(BOT_OWNER))
 async def users(bot, update):
     total_users = await db.total_users_count()
