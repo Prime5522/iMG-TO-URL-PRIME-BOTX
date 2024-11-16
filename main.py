@@ -201,7 +201,7 @@ async def upload(client, message):
         caption=f"<b>ʏᴏᴜʀ ᴄʟᴏᴜᴅ ʟɪɴᴋ ᴄᴏᴍᴘʟᴇᴛᴇᴅ 👇</b>\n\n𝑳𝒊𝒏𝒌 :-\n\n<code>{image_url}</code> \n\n<b>ʙʏ - <a href='https://t.me/Prime_Botz'>⍟ Pʀɪᴍᴇ Bᴏᴛᴢ ⍟</a></b>",
         #disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup([[
-            InlineKeyboardButton(text="•🔗  ᴏᴘᴇɴ ʟɪɴᴋ 🔗•", url=image_url),
+            InlineKeyboardButton(text="•🔗 ᴏᴘᴇɴ ʟɪɴᴋ 🔗•", url=image_url),
             InlineKeyboardButton(text="•🖇️ sʜᴀʀᴇ ʟɪɴᴋ 🖇️•", url=f"https://telegram.me/share/url?url={image_url}")
         ], [
             InlineKeyboardButton(text="❌   ᴄʟᴏsᴇ   ❌", callback_data="close_data")
