@@ -197,7 +197,7 @@ async def upload(client, message):
     await uploading_message.delete()
     codexbots=await message.reply_photo(
         photo=f'{image_url}',
-        caption=f"<b>ʏᴏᴜʀ ᴄʟᴏᴜᴅ ʟɪɴᴋ ᴄᴏᴍᴘʟᴇᴛᴇᴅ 👇</b>\n\n🔗 𝑳𝒊𝒏𝒌 :-<code>{image_url}</code> \n\n<b> Pᴏᴡᴇʀᴇᴅ ʙʏ - <a href='https://t.me/Prime_Botz'>⍟ Pʀɪᴍᴇ Bᴏᴛᴢ ⍟</a></b>",
+        caption=f"<b>ʏᴏᴜʀ ᴄʟᴏᴜᴅ ʟɪɴᴋ ᴄᴏᴍᴘʟᴇᴛᴇᴅ.Cʟɪᴄᴋ Tᴏ Cᴏᴘʏ 👇</b>\n\n🔗 𝑳𝒊𝒏𝒌 :- <code>{image_url}</code> \n\n<b> Pᴏᴡᴇʀᴇᴅ ʙʏ ➠ <a href='https://t.me/Prime_Botz'>⍟ Pʀɪᴍᴇ Bᴏᴛᴢ ⍟</a></b>",
         #disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup([[
             InlineKeyboardButton(text="•🔗 ᴏᴘᴇɴ ʟɪɴᴋ 🔗•", url=image_url),
