@@ -107,11 +107,13 @@ async def cb_handler(bot, update):
 @Bot.on_message(filters.private & filters.command(["start"]))
 async def start(bot, update):
     if not await db.is_user_exist(update.from_user.id):
-	    await db.add_user(update.from_user.id)
-    await update.reply_text(
-        text=START_TEXT.format(update.from_user.mention),
-        disable_web_page_preview=True,
-	reply_markup=START_BUTTONS
+        await db.add_user(update.from_user.id)
+
+    # স্টার্ট মেসেজে টেক্সট, বাটন, এবং পিকচার পাঠানো
+    await update.reply_photo(
+        photo="https://envs.sh/LM4.jpg",  # পিকচারের লিঙ্ক দিন
+        caption=START_TEXT.format(update.from_user.mention),  # মেসেজ টেক্সট
+        reply_markup=START_BUTTONS  # বাটন
     )
 
 @Bot.on_message(filters.private & filters.command(["donate"]))
