@@ -28,12 +28,12 @@ START_TEXT = """**{},
 
 Dᴏɴ'ᴛ wᴏʀʀʏ Iғ ʏᴏᴜ wᴀɴᴛ ᴛᴏ lɪɴᴋ fɪʟᴇs fʀᴏᴍ 16 MB ᴛᴏ 5 GB ᴛʜᴇɴ ʏᴏᴜ cᴀɴ ᴜsᴇ ➠ <a href='https://t.me/File_To_Link_Prime_Bot'>Fɪʟᴇ Tᴏ Lɪɴᴋ Pʀɪᴍᴇ Bᴏᴛ 🔗</a>
 
-<blockquote> 🌿 ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ  <a href='https://t.me/Prime_Botz'>𝐏𝐑𝐈𝐌𝐄 𝐁𝐎𝐓𝐳 🔥</a>**</blockquote>"""
+<blockquote> 🌿 ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ  <a href='https://t.me/Prime_Botz'>ᴘʀɪᴍᴇ ʙᴏᴛz 🔥</a>**</blockquote>"""
 
 ABOUT_TEXT = """**{},
 
 🤖 ɪ ᴀᴍ [ᴍᴇᴅɪᴀ ᴛᴏ ᴜʀʟ ʙᴏᴛ](https://t.me/iMg_To_URL_Prime_Bot)
-👨‍💻 ᴍʏ ᴄʀᴇᴀᴛᴏʀ : <a href="https://telegram.me/Prime_Admin_Nayem">ᴍʀ.ᴘʀɪᴍᴇ</a>
+👨‍💻 ᴍʏ ᴄʀᴇᴀᴛᴏʀ : <a href="https://telegram.me/Prime_Nayem">ᴍʀ.ᴘʀɪᴍᴇ</a>
 🌿 ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : <a href="https://t.me/Prime_Botz">ᴘʀɪᴍᴇ ʙᴏᴛz</a>
 ⚙️ ᴄʜɪʟʟɪɴɢ ᴏɴ : <a href="https://www.heroku.com/">ʜᴇʀᴏᴋᴜ</a>
 🍿 ʙʀᴀɪɴ ꜰᴜᴇʟᴇᴅ : <a href="https://www.mongodb.com/">ᴍᴏɴɢᴏ ᴅʙ</a>
@@ -58,16 +58,20 @@ FORCE_SUBSCRIBE_TEXT = """
 
 START_BUTTONS = InlineKeyboardMarkup(
     [[
-        InlineKeyboardButton('🚀‌ ꜱᴜᴘᴘᴏʀᴛ 🚀‌', url='https://t.me/Prime_Bots_Support_RoBot'),
+        InlineKeyboardButton('💬 ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url='https://t.me/Prime_Botz_Support'),
         InlineKeyboardButton('🦋‌ ᴀʙᴏᴜᴛ 🦋', callback_data='about')
     ],[
         InlineKeyboardButton('⍟ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ⍟', url='https://t.me/Prime_Botz')
+    ],[
+        InlineKeyboardButton('☆ 💫 𝗖𝗥𝗘𝗔𝗧𝗢𝗥 💫 ☆', url='https://t.me/Prime_Nayem')    
     ]]
 )
 ABOUT_BUTTONS = InlineKeyboardMarkup(
         [[
         InlineKeyboardButton('⍟ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ⍟', url='https://t.me/Prime_Botz'),
-        InlineKeyboardButton('👨‍💻 ᴏᴡɴᴇʀ 👨‍💻', url='https://telegram.me/Prime_Admin_Nayem')
+        InlineKeyboardButton('👨‍💻 ᴏᴡɴᴇʀ 👨‍💻', url='https://telegram.me/Prime_Nayem')
+	],[
+        InlineKeyboardButton('🤝 ᴘʀɪᴍᴇ ʙᴏᴛᴢ ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ 💬', url='https://t.me/Prime_Botz_Support')	
 	],[
         InlineKeyboardButton('⋞ ʙᴀᴄᴋ', callback_data='home')
         ]]
