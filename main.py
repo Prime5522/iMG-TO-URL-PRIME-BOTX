@@ -125,9 +125,10 @@ async def cb_handler(bot, update):
 
 @Bot.on_message(filters.private & filters.command(["start"]))
 async def start(bot, update):
-	client = bot
-	message = update
-	if AUTH_CHANNEL:
+    client = bot
+    message = update
+
+    if AUTH_CHANNEL:
         try:
             btn = await is_subscribed(client, message, AUTH_CHANNEL)
             if btn:
@@ -140,7 +141,7 @@ async def start(bot, update):
                 await message.reply_photo(
                     photo="https://envs.sh/KgA.jpg",  # Replace with your image link
                     caption=(
-                        "<b>👋 Hello {message.from_user.mention},\n\n"
+                        f"<b>👋 Hello {message.from_user.mention},\n\n"
                         "ɪꜰ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴜꜱᴇ ᴍᴇ, ʏᴏᴜ ᴍᴜꜱᴛ ꜰɪʀꜱᴛ ᴊᴏɪɴ ᴏᴜʀ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ. "
                         "ᴄʟɪᴄᴋ ᴏɴ \"✇ ᴊᴏɪɴ ᴏᴜʀ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ ✇\" ʙᴜᴛᴛᴏɴ.ᴛʜᴇɴ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ \"ʀᴇǫᴜᴇꜱᴛ ᴛᴏ ᴊᴏɪɴ\" ʙᴜᴛᴛᴏɴ. "
                         "ᴀꜰᴛᴇʀ ᴊᴏɪɴɪɴɢ, ᴄʟɪᴄᴋ ᴏɴ \"ᴛʀʏ ᴀɢᴀɪɴ\" ʙᴜᴛᴛᴏɴ.</b>"
@@ -150,6 +151,8 @@ async def start(bot, update):
                 return
         except Exception as e:
             print(e)
+
+    # যদি নতুন ইউজার হয়, ডাটাবেসে এন্ট্রি যোগ করুন
     if not await db.is_user_exist(update.from_user.id):
         await db.add_user(update.from_user.id)
 
